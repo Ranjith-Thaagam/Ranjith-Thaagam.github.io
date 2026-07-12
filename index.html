@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranjith E — Python Developer</title>
+  <meta name="description" content="Ranjith E — Python Developer based in Chennai. Building scalable web applications and AI-powered platforms with Django, REST APIs, Celery and generative AI." />
+  <meta property="og:title" content="Ranjith E — Python Developer" />
+  <meta property="og:description" content="Building scalable backends, multi-tenant SaaS platforms and AI-powered applications with Python & Django." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🐍</text></svg>" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Cursor spotlight -->
+  <div class="spotlight" id="spotlight"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo mono"><span class="accent">&lt;</span>ranjith<span class="accent">/&gt;</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn btn-sm">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Left social rail ===== -->
+  <aside class="side-rail rail-left" aria-label="Social links">
+    <a href="https://github.com/ranjith-thaagam" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/ranjith-e" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+    </a>
+    <a href="mailto:ranjithe06@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7L22 7"/></svg>
+    </a>
+    <span class="rail-line"></span>
+  </aside>
+
+  <!-- ===== Right email rail ===== -->
+  <aside class="side-rail rail-right" aria-label="Email">
+    <a href="mailto:ranjithe06@gmail.com" class="mono rail-email">ranjithe06@gmail.com</a>
+    <span class="rail-line"></span>
+  </aside>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="badge mono"><span class="pulse"></span>Open to new opportunities</span>
+        <h1 class="hero-name">Ranjith E<span class="hero-dot">.</span></h1>
+        <h2 class="hero-role">I build <span class="typed-wrap"><span class="accent" id="typed"></span><span class="type-cursor">|</span></span></h2>
+        <p class="hero-desc">
+          Python Developer based in Chennai, crafting SaaS platforms, REST APIs and
+          AI-powered applications with a focus on <strong>performance</strong>,
+          <strong>scalability</strong> and <strong>automation</strong>.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">View My Work <span aria-hidden="true">→</span></a>
+          <a href="Resume.pdf" class="btn btn-outline" download="Ranjith_E_Resume.pdf">Download Resume</a>
+        </div>
+        <div class="hero-meta mono">
+          <span>📍 Chennai, India</span>
+          <span>💼 Python Developer @ M7 Corporation</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal" data-delay="1">
+        <div class="code-card" data-tilt>
+          <div class="code-card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-title mono">developer.py — ranjith@chennai</span>
+          </div>
+          <pre class="mono"><code><span class="c-kw">class</span> <span class="c-cls">Developer</span>:
+    name    = <span class="c-str">"Ranjith E"</span>
+    role    = <span class="c-str">"Python Developer"</span>
+    stack   = [<span class="c-str">"Django"</span>, <span class="c-str">"DRF"</span>, <span class="c-str">"Celery"</span>, <span class="c-str">"PostgreSQL"</span>]
+    cloud   = [<span class="c-str">"AWS"</span>, <span class="c-str">"Docker"</span>, <span class="c-str">"K8s"</span>]
+    ai      = [<span class="c-str">"Gemini"</span>, <span class="c-str">"OpenAI"</span>, <span class="c-str">"RAG"</span>]
+
+    <span class="c-kw">def</span> <span class="c-fn">build</span>(<span class="c-kw">self</span>):
+        <span class="c-kw">return</span> <span class="c-str">"scalable SaaS 🚀"</span><span class="code-cursor"></span></code></pre>
+          <div class="code-card-footer mono">
+            <span><span class="accent">●</span> main</span>
+            <span>python 3.12</span>
+            <span>UTF-8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="mouse"><span class="wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- ===== Tech ticker ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track mono">
+      <span>Python</span><span>◆</span><span>Django</span><span>◆</span><span>Django REST Framework</span><span>◆</span>
+      <span>PostgreSQL</span><span>◆</span><span>Redis</span><span>◆</span><span>Celery</span><span>◆</span>
+      <span>AWS</span><span>◆</span><span>Docker</span><span>◆</span><span>Kubernetes</span><span>◆</span>
+      <span>REST APIs</span><span>◆</span><span>OAuth 2.0</span><span>◆</span><span>JWT</span><span>◆</span>
+      <span>Generative AI</span><span>◆</span><span>Gemini API</span><span>◆</span><span>OpenAI API</span><span>◆</span>
+      <span>RAG</span><span>◆</span><span>Vector Search</span><span>◆</span><span>Pandas</span><span>◆</span><span>JavaScript</span><span>◆</span>
+      <span>Python</span><span>◆</span><span>Django</span><span>◆</span><span>Django REST Framework</span><span>◆</span>
+      <span>PostgreSQL</span><span>◆</span><span>Redis</span><span>◆</span><span>Celery</span><span>◆</span>
+      <span>AWS</span><span>◆</span><span>Docker</span><span>◆</span><span>Kubernetes</span><span>◆</span>
+      <span>REST APIs</span><span>◆</span><span>OAuth 2.0</span><span>◆</span><span>JWT</span><span>◆</span>
+      <span>Generative AI</span><span>◆</span><span>Gemini API</span><span>◆</span><span>OpenAI API</span><span>◆</span>
+      <span>RAG</span><span>◆</span><span>Vector Search</span><span>◆</span><span>Pandas</span><span>◆</span><span>JavaScript</span><span>◆</span>
+    </div>
+  </div>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="mono accent section-num">&gt;&gt;&gt;</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Python Developer</strong> with hands-on experience building scalable web
+            applications using <strong>Django, REST APIs, and cloud-based architectures</strong>.
+          </p>
+          <p>
+            Currently at <strong>M7 Corporation, Chennai</strong>, I develop backend systems for
+            internal management tools and multi-tenant SaaS platforms — from designing REST APIs
+            to integrating third-party services and cloud storage solutions.
+          </p>
+          <p>
+            I've shipped <strong>generative AI features to production</strong> — an AI-powered ad
+            creation platform using Gemini, OpenAI and Replicate with async Celery pipelines —
+            and I enjoy working on <strong>data-driven platforms</strong> where performance and
+            automation matter, exploring concepts like RAG, embeddings and vector search.
+          </p>
+        </div>
+        <div class="about-stats reveal" data-delay="1">
+          <div class="stat-card">
+            <span class="stat-num" data-target="2" data-suffix="+">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="200" data-suffix="+">0</span>
+            <span class="stat-label">Ad Campaigns Tracked</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="8" data-suffix="+">0</span>
+            <span class="stat-label">APIs Integrated</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="2" data-suffix="">0</span>
+            <span class="stat-label">SaaS Platforms Built</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="mono accent section-num">&gt;&gt;&gt;</span> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Python Developer <span class="accent">@ M7 Corporation</span></h3>
+              <span class="mono timeline-date">June 2024 — Present · Chennai</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed scalable backend systems using Python and Django for internal management tools and multi-tenant SaaS platforms.</li>
+              <li>Built an AI-powered ad creation platform that generates branded posters &amp; carousels using generative AI and automates Instagram publishing — cutting creative turnaround from hours to minutes.</li>
+              <li>Implemented asynchronous task pipelines with Celery and Redis for AI image generation and scheduled social media publishing.</li>
+              <li>Designed and implemented REST APIs with Django REST Framework for data integration and service-to-service communication.</li>
+              <li>Integrated third-party APIs — Meta Graph API, Google Ads API, payment gateways and cloud storage — to support business workflows.</li>
+              <li>Built responsive full-stack web applications using Django, HTML, CSS, and JavaScript.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Django</span><span>REST APIs</span><span>Celery</span><span>Redis</span><span>Generative AI</span><span>Cloud Storage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="mono accent section-num">&gt;&gt;&gt;</span> Things I've Built</h2>
+
+      <div class="project-card reveal">
+        <div class="project-info">
+          <p class="mono accent project-label">Production SaaS · Generative AI</p>
+          <h3>
+            <a href="https://adsflow.m7.digital/accounts/login/" target="_blank" rel="noopener" class="project-title-link">AdFlow — AI-Powered Ad Creation &amp; Publishing Platform</a>
+          </h3>
+          <p class="project-desc">
+            A multi-tenant SaaS platform that generates branded marketing posters and Instagram
+            carousels from a single campaign brief using generative AI — with scheduled
+            auto-publishing to Instagram via the Meta Graph API.
+          </p>
+          <ul class="project-features">
+            <li>Async image generation pipeline with Celery — live slide-by-slide progress that survives page refreshes</li>
+            <li>Structured prompt pipelines enforcing brand consistency, logo injection &amp; layout rules</li>
+            <li>Multi-model generation with Gemini, OpenAI &amp; Replicate APIs</li>
+            <li>JWT auth with organization → workspace hierarchy for isolated client branding</li>
+            <li>Scheduled Instagram auto-publishing via Celery Beat</li>
+          </ul>
+          <div class="tags">
+            <span>Django REST Framework</span><span>Celery</span><span>Redis</span><span>Gemini API</span><span>OpenAI API</span><span>Meta Graph API</span><span>JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="https://adsflow.m7.digital/accounts/login/" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View Live Platform
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-icon" data-glyph="🎨">
+            <span class="ring ring-1"></span>
+            <span class="ring ring-2"></span>
+            🎨
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal alt">
+        <div class="project-info">
+          <p class="mono accent project-label">Production SaaS</p>
+          <h3>
+            <a href="https://memories.m7corporation.com/" target="_blank" rel="noopener" class="project-title-link">Memories — Photography Studio Management Platform</a>
+          </h3>
+          <p class="project-desc">
+            A multi-tenant SaaS platform for photography studios to manage clients, events and media
+            with cloud storage. Includes event management, photo selection workflows, personal client
+            drives and social media scheduling.
+          </p>
+          <ul class="project-features">
+            <li>Role-based access control &amp; PIN-protected sharing</li>
+            <li>Cloud storage with presigned URLs — up to 10GB file support</li>
+            <li>Dynamic storage quotas with trial periods</li>
+            <li>Easebuzz payment gateway integration</li>
+            <li>Face detection, watermarking &amp; ZIP downloads</li>
+            <li>Social media management with client approvals</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>Django</span><span>PostgreSQL</span><span>Cloudflare R2</span><span>REST APIs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://memories.m7corporation.com/" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View Live Platform
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-icon" data-glyph="📸">
+            <span class="ring ring-1"></span>
+            <span class="ring ring-2"></span>
+            📸
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-info">
+          <p class="mono accent project-label">Analytics Platform</p>
+          <h3>Meta &amp; Google Ads Analytics Dashboard</h3>
+          <p class="project-desc">
+            An advertising analytics dashboard integrating Meta Graph API and Google Ads API to track
+            performance of 200+ ad campaigns — helping marketers monitor ROI and optimize ad spend
+            through interactive reporting.
+          </p>
+          <ul class="project-features">
+            <li>Hierarchical drill-down: Campaign → Ad Set → Ad</li>
+            <li>Custom date filters &amp; interactive reporting</li>
+            <li>Automated Excel report generation (OpenPyXL)</li>
+            <li>OAuth 2.0 secured API integrations</li>
+          </ul>
+          <div class="tags">
+            <span>Django REST Framework</span><span>Meta Graph API</span><span>Google Ads API</span><span>Pandas</span><span>OAuth 2.0</span>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-icon" data-glyph="📊">
+            <span class="ring ring-1"></span>
+            <span class="ring ring-2"></span>
+            📊
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="mono accent section-num">&gt;&gt;&gt;</span> Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h4><span class="skill-icon">💻</span> Programming &amp; Frameworks</h4>
+          <div class="tags">
+            <span>Python</span><span>JavaScript</span><span>SQL</span><span>Django</span><span>Django REST Framework</span><span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="1">
+          <h4><span class="skill-icon">🗄️</span> Databases</h4>
+          <div class="tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="2">
+          <h4><span class="skill-icon">⚙️</span> Backend &amp; Messaging</h4>
+          <div class="tags">
+            <span>Celery</span><span>Celery Beat</span><span>Redis</span><span>REST APIs</span><span>JWT</span><span>OAuth 2.0</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h4><span class="skill-icon">☁️</span> Cloud &amp; DevOps</h4>
+          <div class="tags">
+            <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Cloudflare R2</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="1">
+          <h4><span class="skill-icon">🤖</span> AI &amp; LLM</h4>
+          <div class="tags">
+            <span>Generative AI</span><span>Gemini API</span><span>OpenAI API</span><span>Prompt Engineering</span><span>RAG</span><span>Embeddings</span><span>Vector Search</span><span>HuggingFace</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="2">
+          <h4><span class="skill-icon">🔌</span> APIs &amp; Integrations</h4>
+          <div class="tags">
+            <span>Meta Graph API</span><span>Google Ads API</span><span>Instagram API</span><span>Payment Gateways</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h4><span class="skill-icon">🌐</span> Web &amp; Tools</h4>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>Git</span><span>GitHub</span><span>Pandas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="mono accent section-num">&gt;&gt;&gt;</span> Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="mono accent">2018 — 2020</span>
+          <h4>M.Sc. Computer Science</h4>
+          <p>Hindusthan College of Arts &amp; Science, Coimbatore</p>
+        </div>
+        <div class="edu-card reveal" data-delay="1">
+          <span class="mono accent">2015 — 2018</span>
+          <h4>B.Sc. Computer Science</h4>
+          <p>Park's College of Arts &amp; Science, Tiruppur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="container reveal">
+      <p class="mono accent">&gt;&gt;&gt; ranjith.contact()</p>
+      <h2 class="contact-title">Get In Touch</h2>
+      <p class="contact-desc">
+        I'm open to new opportunities and interesting projects. Whether you have a question
+        or just want to say hi — my inbox is always open!
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:ranjithe06@gmail.com" class="btn">📧 ranjithe06@gmail.com</a>
+        <a href="tel:+917904046171" class="btn btn-outline">📱 +91 79040 46171</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="mono">Designed &amp; Built by Ranjith E · © <span id="year"></span></p>
+    <p class="mono footer-sub">Crafted with vanilla HTML · CSS · JavaScript — no frameworks needed</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
